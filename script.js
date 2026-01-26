@@ -166,3 +166,15 @@ window.addEventListener("scroll", () => {
   }
   lastScrollTop = st <= 0 ? 0 : st;
 });
+
+// =========================
+// Portfolio Groups Toggle
+// =========================
+document.querySelectorAll(".group-title").forEach(title => {
+  title.addEventListener("click", () => {
+    const content = title.nextElementSibling;
+    content.classList.toggle("open");
+  });
+});
+
+
