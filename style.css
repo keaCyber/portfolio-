@@ -127,4 +127,40 @@ h2 { color: var(--main-color); margin-bottom: 15px; }
   #mainNav .menu.show { display: flex; }
   .menu-toggle { display: block; }
 }
+/* Portfolio Groups (Click to Open) */
+.portfolio-group {
+  margin-bottom: 25px;
+}
+
+.group-title {
+  cursor: pointer;
+  background: var(--main-color);
+  color: white;
+  padding: 12px 15px;
+  border-radius: 6px;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.group-title:hover {
+  background: #009974;
+}
+
+.group-content {
+  display: none;
+  margin-top: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.group-content.open {
+  display: grid;
+}
+
+.portfolio-item img,
+.group-content video {
+  width: 100%;
+  border-radius: 8px;
+}
+
 
