@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keamogetsoe Sekati | Web & Graphic Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav id="mainNav">
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="menu">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Intro -->
+  <div id="introOverlay">
+    <span id="introText"></span>
+    <div id="introHint">Click anywhere to continue...</div>
+    <button id="portfolioBtn" class="introBtn" style="display:none;">Go to Portfolio</button>
+  </div>
+
+  <!-- Main Content -->
+  <header>
+    <h1>Keamogetsoe Sekati</h1>
+    <p class="tagline">Web & Graphic Designer | Lenasia South, Johannesburg</p>
+  </header>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Hi, I’m Keamogetsoe Sekati! Welcome to my portfolio website.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+
+      <!-- FIRST PROJECT -->
+      <div class="portfolio-item" data-title="Feel My Needs Logo" data-desc="Logo">
+          <img src="assets/Logo.JPG" alt="Logo>
+          <div class="portfolio-info">
+            <h3>Logo</h3>
+          </div>
+        
+      </div>
+
+      <!-- Second Project -->
+      <div class="portfolio-item" data-title="kids Comic Book Album" data-desc="Album">
+        <img src="assets/kidsComicBookAlbum.JPG" alt="Luminence Lenses Business Card" />
+        <div class="portfolio-info">
+          <h3>Album</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <h3>HTML</h3>
+        <div class="skill-bar"><div class="skill-progress" data-skill="90%">0%</div></div>
+      </div>
+      <div class="skill">
+        <h3>CSS</h3>
+        <div class="skill-bar"><div class="skill-progress" data-skill="85%">0%</div></div>
+      </div>
+      <div class="skill">
+        <h3>JavaScript</h3>
+        <div class="skill-bar"><div class="skill-progress" data-skill="75%">0%</div></div>
+      </div>
+      <div class="skill">
+        <h3>Illustrator</h3>
+        <div class="skill-bar"><div class="skill-progress" data-skill="80%">0%</div></div>
+      </div>
+      <div class="skill">
+        <h3>InDesign</h3>
+        <div class="skill-bar"><div class="skill-progress" data-skill="70%">0%</div></div>
+      </div>
+      <div class="skill">
+        <h3>Canva</h3>
+        <div class="skill-bar"><div class="skill-progress" data-skill="90%">0%</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:sekatiphemelo2@gmail.com">sekatiphemelo2@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> Phone: 081 451 5744</p>
+      <p><i class="fab fa-tiktok"></i> TikTok: @itsmercury01</p>
+      <p><i class="fab fa-facebook"></i> Facebook: Keamogetsoe Sekati</p>
+    </div>
+    <div class="cv-download">
+      <a href="assets/Keamogetsoe-Sekati-CV.pdf" download><i class="fas fa-file-pdf"></i> Download CV</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Keamogetsoe Sekati. All rights reserved.</p>
+  </footer>
+
+  <div id="portfolioModal" class="modal">
+    <span class="close">&times;</span>
+    <img id="modalImg" src="" alt="" />
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
